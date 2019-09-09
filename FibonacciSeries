@@ -1,0 +1,16 @@
+
+#FibonacciSeries
+def fib(n):
+	first,second=0,1
+	if n<=0:
+		print("pass valid input!")
+	elif n==1:
+		print(first)
+	else:
+		print(first)
+		print(second)
+		for x in range(2,n):
+			 sum=first+second
+			 print(sum)
+			 first,second=second,sum
+fib(10)
