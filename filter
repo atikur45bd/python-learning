@@ -1,0 +1,6 @@
+'''def even(n):
+    return n%2==0'''
+num=[1,2,3,45,45,6,77,8]
+#print_even=list(filter(even,num))
+even=list(filter(lambda a:a%2==0,num))
+print(*even)
