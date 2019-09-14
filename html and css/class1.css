@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Rufina');
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
+
+p{
+	font-family: 'Rufina', serif;
+}
+
+
+#manu{
+	font-family: 'Averia Serif Libre', cursive;
+	width: 960px;
+	padding: 0px;
+	list-style-type: none;
+    background: #4E4E4E;
+     border-bottom: 5px solid orange;
+     min-height: 40px;
+     margin: 0 auto;
+}
+#manu li{
+     position: relative;
+	float: left;
+    border-right: 1px solid #650B5b;
+    border-left: 1px solid #2B2A2A;
+   
+   
+}
+#manu li:last-child{
+	border-right: none;
+}
+#manu li:first-child{
+	border-left: none;
+}
+
+#manu li a{
+	
+	color: #fff;
+	background: #4E4E4E;
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+    transition: all 0.5s ease;
+}
+#manu li a:hover{
+	background: orange;
+
+}
+#manu li ul{
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	left: -9999px;
+	width: 200px;
+}
+
+#manu li:hover ul{
+	left: 0px;
+}
+#manu li ul li {
+	float: none;
+	border-right: none;
+	border-left: none;
+	border-top: 1px solid #650B5b;
+    border-bottom: 1px solid #2B2A2A;
+   }
+
+.wrapper{
+	width: 960px;
+	margin: 0px auto;
+}
+.box img {
+	width: 300px;
+	height: 180px;
+}
+.box h1{
+	color: orange;
+}
+.box p{
+	text-align: justify;
+}
+.box{
+	width: 300px;
+	float: left;
+	margin-top: 50px;
+	margin-right: 30px;
+}
+.nomargin{
+	margin-right: 0px;
+}
+.box a {
+	text-decoration: none;
+	background-color: orange;
+	text-align: center;
+	padding: 5px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 5px;
+	transition:all 1s ease;
+}
+.box a:hover{
+	background: black;
+	color: white;
+}
+
+}
+.bangla{
+	font-family:SolaimanLipi;
+	font-size:50px;
+	color:red;
+}

@@ -1,0 +1,138 @@
+*{margin:0;padding:0 width:100%;}
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Shanti');
+#wrapper{
+	font-family: 'Shanti', sans-serif;
+	
+	
+}
+#fixed{
+	position: fixed;
+	width: 100%;
+}
+#header{
+    width: 100%;
+	background: #6C6051;
+	color: #F2F3F5;
+	padding: 15px;
+	border-bottom: 10px solid orange;
+}
+#header h1{
+	font-family: 'Baloo', cursive; 
+}
+#header p{
+	font-family: 'Frank Ruhl Libre', serif;
+}
+#nav{
+
+border-bottom: 10px solid orange;
+background: #272822;
+height: 40px;
+}
+#nav ul{
+	
+    padding: 0;
+   list-style-type: none;
+}
+#nav ul li{
+	position: relative;
+	float: left;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#nav ul li:last-child{
+	border-right: none;
+
+}
+#nav ul li :first-child{
+	border-left: none;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: #F2F3F5;
+	display: block;
+	padding: 10px 20px;
+	transition:all 0.5s ease;
+}
+#nav ul li a:hover{
+	background: orange;
+	color: #272822;
+
+}
+#nav ul li ul{
+	position:absolute;
+	left:-99999px;
+	
+	width: 200px;
+}
+#nav ul li:hover ul{
+	left:0;
+}
+
+#nav ul  li ul li {
+	background: #272822;
+	border-right: none;
+	border-left: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+#nav ul  li ul li:first-child{
+    border-top: none;
+}
+#nav ul  li ul li:last-child{
+	border-bottom: none;
+}
+
+#slider img{
+  
+	margin:0 auto;
+	
+	border-bottom: 10px solid orange;
+	width: 960px;
+}
+#content-wrapper{
+     color: #E6E6E6;
+	overflow: hidden;
+	padding: 20px;
+	background:#272822;
+	
+}
+#content{
+	text-align: justify;
+	width: 600px;
+	float: left;
+}
+#aside{
+	color:#E6E6E6;
+     width: 100px;
+  float: left;
+  margin-left: 40px;
+}
+
+
+
+
+#aside ul li a{
+	text-decoration: none;
+    color:#E6E6E6;
+}
+#footer1{
+
+	padding: 5px;
+	color: #00001D;
+	text-align: center;
+}
+p{
+	text-align: justify;
+}
+#attention {
+	margin: 0 auto;
+	width: 960px;
+	padding: 20;
+	background: #F7819F;
+}
+#attention img{
+	width: 300px;
+	height: 200px;
+}

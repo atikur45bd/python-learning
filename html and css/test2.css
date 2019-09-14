@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
+#manu{
+	font-family: 'Averia Serif Libre', cursive;
+	width: 960px;
+	padding: 0px;
+	list-style-type: none;
+	margin:0 auto;
+	background: #4e4e4e;
+	border-bottom: 5px solid orange;
+	min-height: 50px;
+}
+#manu li{
+	position: relative;
+	float: left;
+	border-right: 1px solid #650B5B;
+	border-left: 1px solid #2B2A2A;
+	
+}
+#manu li:last-child{
+	border-right: none;
+}
+#manu li:first-child{
+	border-left: none;
+}
+#manu li a {
+
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+	color: #fff;
+	background: #4e4e4e;
+	transition: all 0.5s ease;
+}
+#manu li a:hover{
+	background: orange;
+}
+#manu li ul{
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	left: -9999px;
+	width: 200px;
+}
+#manu li:hover ul{
+	left: 0px;
+}
+#manu li ul li{
+	float:none;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #650B5B;
+	border-bottom: 1px solid #2B2A2A;
+}
+#manu li ul li:first-child{
+     border-top: none;
+}
+#manu li ul li:last-child{
+	border-bottom: none;
+}

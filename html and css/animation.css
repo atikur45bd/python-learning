@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url(Stars.png);
+	background-size: cover;
+    font-family: 'Archivo Black', sans-serif;
+}
+div{
+	position: absolute;
+	margin-left: 410px;
+	margin-top: 295px;
+	border:4px solid #fff;
+	padding: 20px 50px;
+	border-radius: 10px;
+    box-shadow: 0 0 10px #FE2E2E, 0 0 30px #FE2E2E, inset 0 0 10px #2E64FE,inset 0 0 30px #2E64FE;
+    animation: animate .1s infinite;
+}
+div :before{
+   content: "";
+   position: absolute;
+   bottom: 80px;
+   left: 0;
+   height: 4px;
+   background: #fff;
+}
+h1{
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+    text-shadow:0 0 10px #2E64FE,0 0 20px #FE2E2E , 0 0 10px #2E64FE,0 0 80px #FE2E2E, 0 0 100px #FE2E2E,0 0 120px #FE2E2E;
+}
+h1 span{
+	animation: animate .5s linear infinite;
+}
+h1 span :nth-child(1){
+	animation-delay: .25s;
+}
+h1 span :nth-child(2){
+	animation-delay: .2s;
+}
+h1 span :nth-child(3){
+	animation-delay: .35s;
+}
+h1 span :nth-child(4){
+	animation-delay: .4s;
+}
+@keyframes animate{
+	0%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 1;
+	}
+	40%{
+		opacity: .5;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
