@@ -1,0 +1,16 @@
+#polymorphism
+class pycharm:
+    def execute(self):
+        print("compiling")
+        print("running")
+class editor:
+    def execute(self):
+        print("duck")
+        print("compiling")
+        print("running")
+class leptop:
+    def code(self,ide):
+        ide.execute()
+ide= editor()
+lep1= leptop()
+lep1.code(ide)
