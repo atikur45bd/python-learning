@@ -1,0 +1,14 @@
+def sort(nums):
+    for i in range(5):
+        minpos=i
+        for j in range(i,6):
+            if nums[j]< nums[minpos]:
+             minpos=j
+
+        tem= nums[i]
+        nums[i]=nums[minpos]
+        nums[minpos] =tem
+        print(nums)   
+nums=[7,5,3,2,9,8]
+sort(nums)
+print(nums)
