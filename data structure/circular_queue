@@ -1,0 +1,31 @@
+class circularqueue:
+    def __init__(self):
+        self.queue=list()
+        self.maxsize=5
+        self.head=0
+        self.tail=0
+    def enqueue(self,data):
+        if self.size()==self.maxsize-1:
+            return ("queue is full")
+        self.queue.append(data)
+        self.tail=(self.tail+1)%self.maxsize
+        return True
+    def dequeue(self):
+        if self.size()==0:
+            return ("queue is empty")
+        data=self.queue[self.head]
+        self.head=(self.head+1)%self.maxsize
+        return True
+    def size(self):
+        if self.tail>=self.head:
+            return (self.tail-self.head)
+        return (self.maxsize-(self.head-self.tail))
+q=circularqueue()
+print(q.enqueue(5))
+print(q.enqueue(7))
+print(q.enqueue(8))
+print(q.enqueue(5))
+print(q.dequeue())
+print(q.enqueue(5))
+print("size of queue",q.size())
+print(q.queue(list))
