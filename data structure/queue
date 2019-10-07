@@ -1,0 +1,23 @@
+class queue:
+    def __init__(self):
+        self.items=[]
+    def enqueue(self,item):
+        if item not in self.items:
+            self.items.insert(0,item)
+            return True
+        return False
+        
+    def dequeue(self):
+        if len(self.items)>0:
+            return self.items.pop()
+        return ("Queue empty!")
+    def size(self):
+        return len(self.items)
+q=queue()
+print(q.enqueue('Md'))
+q.enqueue('Atikur')
+q.enqueue('Rahman')
+print(q.dequeue())
+print(q.size())
+
+
