@@ -1,0 +1,42 @@
+class Queue:
+    def __init__(self):
+        self.queue=list()
+        self.maxsize=5
+        self.head=0
+        self.tail=0
+    def enqueue(self,data):
+        if self.size()>=self.maxsize:
+            return ("queue is full")
+        self.queue.append(data)
+        self.tail+=1
+        return True
+    def dequeue(self):
+        if self.size()<=0:
+            self.reset()
+            return ("queue is empty")
+        data=self.queue[self.head]
+        self.head+=1
+        return data
+    def size(self):
+        return self.tail-self.head
+    def reset(self):
+        self.tail=0
+        self.head=0
+        self.queue=list()
+q=Queue()
+print(q.enqueue(1))
+print(q.enqueue(2))
+print(q.enqueue(3))
+print(q.enqueue(4))
+print(q.enqueue(5))
+print(q.dequeue())
+print(q.dequeue())
+print(q.dequeue())
+print(q.dequeue())
+print(q.dequeue())
+print(q.dequeue())
+print(q.enqueue(1))
+print(q.enqueue(1))
+
+
+print("size of queue:",q.size())
